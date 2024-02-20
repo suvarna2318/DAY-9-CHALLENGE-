@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="day9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <center><h1>Event Manager</h1></center>
+    <nav>
+        <center><a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#add-event">Add Event</a>
+        <a href="#search">Search</a></center>
+    </nav>
+</header>
+
+<section id="event-listing">
+    <!-- Events will be listed here -->
+</section>
+
+<section id="add-event">
+    <form id="eventForm">
+        <input type="text" id="title" placeholder="Event Title" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <button type="submit">Add Event</button>
+    </form>
+</section>
+
+<section id="search">
+    <input type="text" id="searchInput" placeholder="Search events...">
+    <button onclick="searchEvents()">Search</button>
+</section>
+
+<footer>
+    <p>© 2024 Event Management System</p>
+</footer>
+
+<script src="day9.js"></script>
+</body>
+</html>
